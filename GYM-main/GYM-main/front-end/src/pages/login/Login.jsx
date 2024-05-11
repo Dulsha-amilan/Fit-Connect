@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom"; // Changed to useNavigate
 import Logo from "./../../assets/logo.png";
 import axios from "axios";
 import "./login.scss";
-
+///
 const Login = () => {
   const navigate = useNavigate(); // Using useNavigate hook to get navigation function
 
