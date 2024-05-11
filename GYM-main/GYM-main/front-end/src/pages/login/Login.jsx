@@ -37,8 +37,8 @@ const Login = () => {
         </div>
         <div className="right">
           <div className="logo">
-            <img src={Logo} width={"80px"} alt="logo"></img>
-            <span>Fit Zone</span>
+            <img src={Logo} width={"300px"} alt="logo"></img>
+            
           </div>
           <h1>Login</h1>
           <form>
@@ -51,5 +51,5 @@ const Login = () => {
     </div>
   );
 };
-
+//
 export default Login;
