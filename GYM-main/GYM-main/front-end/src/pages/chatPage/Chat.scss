@@ -3,7 +3,7 @@
 .chat{
   @include themify($themes) {
     padding: 20px 70px;
-    background-image: url('../../assets/chat.png');
+    background-image: url('../../assets/chat.jpg');
 
     @include mobile {
       padding: 10px;

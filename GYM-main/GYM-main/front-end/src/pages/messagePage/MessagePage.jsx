@@ -34,7 +34,7 @@ function MessagePage() {
         <Navbar userName={userName} profilePic={profilePic} />
         <LeftBar userName={userName} profilePic={profilePic} />
         <div style={{ display: "flex" }}>
-          
+        
           <div style={{ flex: 6 }}>
             <div className="home">
               <Messages userName={userName} profile={profilePic}/>

@@ -39,7 +39,7 @@ const LeftBar = ({ userName }) => {
             {/* {profilePic && <img src={`data:image/jpeg;base64,${profilePic}`} alt="Profile" />} */}
             {/* <span>{userName}</span> */}
           </div>
-          <Link to={`/home/${userName}`} className="item" style={{ marginRight:"30px" }} >
+          <Link to={`/home/${userName}`} className="item" style={{ marginRight:"70px" }} >
             <img src={Images} alt="" />
             {/* <span>H</span> */}
           </Link>
@@ -76,10 +76,10 @@ const LeftBar = ({ userName }) => {
             <span>Workout Status</span>
           </Link>
           <hr/>
-          <Link to={`/`} className="item" style={{ marginLeft:"110px" }}>
+          {/* <Link to={`/`} className="item" style={{ marginLeft:"110px" }}>
             <img src={Logout} alt="" />
-            {/* <span>Log out</span> */}
-          </Link>
+           
+          </Link> */}
         </div>
       </div>
     </div>

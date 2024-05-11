@@ -9,6 +9,7 @@ import Logo from "./../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import "./navbar.scss";
+import Logout from "../../assets/logout.png";
 
 const Navbar = ({ userName, profilePic }) => {
   const { toggle, darkMode } = useContext(DarkModeContext);
@@ -18,21 +19,25 @@ const Navbar = ({ userName, profilePic }) => {
       <div className="left">
         <img src={Logo} width="150" style={{ borderRadius: '10%' }} alt="FitFam Logo" />
         {/* <span>Fit Zone</span> */}
-        <Link to={`/home/${userName}`}>
+        {/* <Link to={`/home/${userName}`}>
           <HomeOutlinedIcon />
-        </Link>
+        </Link> */}
         <div className="search">
           <SearchOutlinedIcon />
           <input type="text" placeholder="Search" />
         </div>
       </div>
       <div className="right">
-        <PersonOutlinedIcon />
-        <EmailOutlinedIcon />
+        {/* <PersonOutlinedIcon />
+        <EmailOutlinedIcon /> */}
         <div className="user">
           {profilePic && <img src={`data:image/jpeg;base64,${profilePic}`} alt="Profile" />}
           <span>{userName}</span>
         </div>
+        <Link to={`/`} className="item" style={{ marginLeft:"110px" }}>
+            <img src={Logout} alt="" />
+            {/* <span>Log out</span> */}
+          </Link>
       </div>
     </div>
   );

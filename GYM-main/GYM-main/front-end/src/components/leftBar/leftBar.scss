@@ -3,7 +3,7 @@
 .leftBar {
   @include themify($themes) {
     // flex: 2;
-    // position: sticky;
+    position: sticky;
     // top: 70px;
     // height: calc(100vh - 70px);
     // overflow: scroll;
@@ -12,6 +12,9 @@
     // color: themed("textColor");
     margin: 2px;
     justify-content: center;
+    
+    
+    
     // padding: 20px;
 
     @include mobile{
@@ -24,12 +27,14 @@
 
     .container {
       padding: 5px 20px 5px 60px;
+      position: sticky;
 
       hr {
         margin: 20px 0px;
         border: none;
         height: 0.5px;
         background-color: themed("border");
+        
       }
 
       .menu {
@@ -68,6 +73,8 @@
           color: black;
           gap: 10px;
           font-weight: bold;
+          transition: background-color 0.3s ease, transform 0.3s ease; // Add transition for smooth effect
+  
           
           img {
             width: 40px;
@@ -75,6 +82,11 @@
 
           span {
             font-size: 14px;
+          }
+          &:hover {
+            // background-color: #a8dadc; // Change to desired hover background color
+            transform: scale(1.10); // Slightly scale up the item on hover
+            color:rgb(255, 255, 255) ;
           }
         }
       }
