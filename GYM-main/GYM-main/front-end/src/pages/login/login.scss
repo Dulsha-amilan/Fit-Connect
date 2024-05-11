@@ -1,0 +1,102 @@
+.login {
+  height: 100vh;
+  background-color: rgb(17, 58, 105);
+  background-image: url("../../assets/ph10.png"); // Add your image path
+  background-size: cover; // Cover the entire area
+  background-position: center; // Center the background image
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(95, 107, 109, 0.5), rgba(39, 11, 96, 0.5)),
+        url("../../assets/ph11.jpg")
+          center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 50px;
+        line-height: 80px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+      
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        color: rgb(29, 68, 107);
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      .logo {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: 40px;
+          color: #1812cd;
+          font-weight: bold;
+        }
+        img{
+          margin-right: 10px;
+        }
+      }
+      h1 {
+      color: #555;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        input {
+        border: none;
+        border-bottom: 1px solid rgb(198, 206, 214);
+        padding: 20px 10px;
+        }
+        
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: #002B5B;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            background-color: darken(#1c78e0, 10%);
+          }
+        }
+      }
+    }
+  }
+}

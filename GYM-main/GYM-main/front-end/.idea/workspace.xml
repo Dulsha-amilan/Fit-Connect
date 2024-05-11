@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d7002cc-532b-49c6-93cf-115a392572f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../back-end/src/main/java/com/example/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-end/src/main/java/com/example/demo/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back-end/src/main/java/com/example/demo/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-end/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../back-end/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leftBar/LeftBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leftBar/LeftBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leftBar/leftBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leftBar/leftBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rightBar/rightBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rightBar/rightBar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shareVideo/ShareVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shareVideo/ShareVideo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/chatPage/Chat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chatPage/Chat.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/messagePage/MessagePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/messagePage/MessagePage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/register.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2g0yLhlQnWLhvUyOVRaX5hWax99" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d7002cc-532b-49c6-93cf-115a392572f2" name="Changes" comment="" />
+      <created>1714848735931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714848735931</updated>
+    </task>
+    <servers />
+  </component>
+</project>

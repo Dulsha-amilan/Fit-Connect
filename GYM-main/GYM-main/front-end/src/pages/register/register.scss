@@ -1,0 +1,91 @@
+.register {
+  height: 100vh;
+  background-color: rgb(17, 58, 105);
+  background-image: url("../../assets/ph10.png"); // Add your image path
+  background-size: cover; // Cover the entire area
+  background-position: center; // Center the background image
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 550px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(69, 81, 100, 0.5), rgba(39, 11, 96, 0.5)),
+        url("../../assets/ph13.jpg")
+          center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+      
+
+      span {
+        font-size: 14px;
+      }
+      
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        color: rgb(30, 48, 165);
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      h1 {
+      color: #555;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        input {
+        border: none;
+        border-bottom: 1px solid lightgray;
+        padding: 20px 10px;
+        }
+        
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: #002B5B;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            background-color: darken(#1c78e0, 10%);
+          }
+        }
+      }
+    }
+  }
+}

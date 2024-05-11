@@ -1,0 +1,15 @@
+@import "../../style.scss";
+
+.message-page{
+  @include themify($themes) {
+    padding: 20px 70px;
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    @include tablet{
+      padding: 20px;
+    }
+  }
+ }
