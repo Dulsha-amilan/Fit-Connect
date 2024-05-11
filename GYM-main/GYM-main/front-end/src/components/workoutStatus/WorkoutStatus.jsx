@@ -3,6 +3,9 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const WorkoutStatus = ({ workoutReport, userName }) => {
     const [commentOpen, setCommentOpen] = useState(false);
@@ -12,7 +15,7 @@ const WorkoutStatus = ({ workoutReport, userName }) => {
     const deleteReport = async (id) => {
         try {
             await axios.delete(`http://localhost:8080/api/exercise-duration/delete/${id}`);
-            alert("Workout report deleted successfully!");
+            toast.success("Workout report deleted successfully!");
         } catch (error) {
             console.error('Error deleting report:', error);
             alert('Failed to delete report. Please try again.');
@@ -30,7 +33,7 @@ const WorkoutStatus = ({ workoutReport, userName }) => {
             const response = await axios.patch(
                 `http://localhost:8080/api/exercise-duration/startTime/${workoutReport.id}/${newValue}`
             );
-            alert("Start time updated successfully!");
+            toast.success("Start time updated successfully!");
             return response.data;
         } catch (error) {
             console.error('Error updating :', error);
@@ -52,7 +55,7 @@ const WorkoutStatus = ({ workoutReport, userName }) => {
             const response = await axios.patch(
                 `http://localhost:8080/api/exercise-duration/end-time/${workoutReport.id}/${newValue}`
             );
-            alert("Start time updated successfully!");
+            toast.success("Start time updated successfully!");
             return response.data;
         } catch (error) {
             console.error('Error updating :', error);
@@ -74,7 +77,7 @@ const WorkoutStatus = ({ workoutReport, userName }) => {
             const response = await axios.patch(
                 `http://localhost:8080/api/exercise-duration/calories/${workoutReport.id}/${newValue}`
             );
-            alert("Start time updated successfully!");
+            toast.success("Start time updated successfully!");
             return response.data;
         } catch (error) {
             console.error('Error updating :', error);
@@ -100,7 +103,7 @@ const WorkoutStatus = ({ workoutReport, userName }) => {
             try {
                 // Send a PATCH request to the specified endpoint with the parameters
                 await axios.patch(`http://localhost:8080/api/exercise-duration/update-duration/${workoutReport.id}/${exercise}/${newValue}`);
-                alert(`${exercise} updated successfully!`);
+                toast.success(`${exercise} updated successfully!`);
             } catch (error) {
                 console.error(`Error updating ${exercise}:`, error);
                 alert(`Failed to update ${exercise}. Please try again.`);
@@ -110,6 +113,8 @@ const WorkoutStatus = ({ workoutReport, userName }) => {
 
     return (
             <div className="status">
+            <ToastContainer position="top-right" autoClose={1300} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
+
               <div className="container">
                 <div className="user">
                   <div className="userInfo">

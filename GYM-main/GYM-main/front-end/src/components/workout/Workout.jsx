@@ -4,6 +4,11 @@ import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import Comments from "../comments/Comments";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 
 const Workout = ({ workout, userName }) => {
     const [commentOpen, setCommentOpen] = useState(false);
@@ -28,7 +33,7 @@ const Workout = ({ workout, userName }) => {
     const deletePost = async (id) => {
         try {
             const response = await axios.delete(`http://localhost:8080/api/exercises/delete/${id}`);
-            alert("workout plan deleted successfully!");
+            toast.success("workout plan deleted successfully!");
         } catch (error) {
             console.error('Error deleting post:', error);
             alert('Failed to delete post. Please try again.');
@@ -40,11 +45,11 @@ const Workout = ({ workout, userName }) => {
             const response = await axios.patch(
                 `http://localhost:8080/api/exercises/descriptionUpdate/${id}/${newDescription}`
             );
-            alert("Video description updated successfully!");
+            toast.success("Workout plan Update successfully!");
             return response.data;
         } catch (error) {
             console.error('Error updating description:', error);
-            alert('Failed to update description. Please try again.');
+            toast.error('Failed to update description. Please try again.');
         }
     };
 
@@ -63,6 +68,7 @@ const Workout = ({ workout, userName }) => {
 
     return (
         <div className="workout">
+            <ToastContainer position="top-right" autoClose={1300} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
             <div className="container">
                 <div className="user">
                     <div className="userInfo">

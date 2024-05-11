@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import MealPlanComments from "../mealPlanComments/MealPlanComment";
 import { useState } from "react";
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const MealPlan = ({ meal, userName }) => {
   const [commentOpen, setCommentOpen] = useState(false);
@@ -134,6 +136,7 @@ const MealPlan = ({ meal, userName }) => {
 
   return (
     <div className="meal">
+      <ToastContainer position="top-right" autoClose={1300} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
       <div className="container">
         <div className="user">
           <div className="userInfo">

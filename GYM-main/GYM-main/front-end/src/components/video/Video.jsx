@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import Comments from "../videoComments/VideoCommnets";
 import "./Video.scss";
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Video = ({ video, userName }) => {
     const [commentOpen, setCommentOpen] = useState(false);
@@ -15,6 +18,7 @@ const Video = ({ video, userName }) => {
     const videoRef = useRef(null);
     const [likes, setLikes] = useState(video.likes);
     const [comments, setComments] = useState(video.comments);
+    const navigate = useNavigate(); // Initialize useNavigate
 
     useEffect(() => {
         setLikes(video.likes);
@@ -71,7 +75,8 @@ const Video = ({ video, userName }) => {
     const deletePost = async (id) => {
         try {
             const response = await axios.delete(`http://localhost:8080/api/videos/delete/${id}`);
-            alert("Video deleted successfully!");
+            toast.success("Account created successfully!");
+
         } catch (error) {
             console.error('Error deleting post:', error);
             alert('Failed to delete post. Please try again.');
@@ -83,7 +88,9 @@ const Video = ({ video, userName }) => {
             const response = await axios.patch(
                 `http://localhost:8080/api/videos/descriptionUpdate/${id}/${newDescription}`
             );
-            alert("Video description updated successfully!");
+            toast.success("Account created successfully!");
+
+
             return response.data;
         } catch (error) {
             console.error('Error updating description:', error);
@@ -106,6 +113,7 @@ const Video = ({ video, userName }) => {
 
     return (
         <div className="video">
+            <ToastContainer position="top-right" autoClose={1300} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
             <div className="container">
                 <div className="user">
                     <div className="userInfo">
