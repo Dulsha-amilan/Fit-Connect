@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Images from "../../assets/online.png";
+import Images from "../../assets/home.png";
 import Watch from "../../assets/videopl.png";
 import Gaming from "../../assets/report.png";
 import Diet from "../../assets/Mlplan.png";
@@ -36,12 +36,12 @@ const LeftBar = ({ userName }) => {
       <div className="container">
         <div className="menu">
           <div className="user">
-            {profilePic && <img src={`data:image/jpeg;base64,${profilePic}`} alt="Profile" />}
-            <span>{userName}</span>
+            {/* {profilePic && <img src={`data:image/jpeg;base64,${profilePic}`} alt="Profile" />} */}
+            {/* <span>{userName}</span> */}
           </div>
-          <Link to={`/home/${userName}`} className="item">
+          <Link to={`/home/${userName}`} className="item" style={{ marginRight:"30px" }} >
             <img src={Images} alt="" />
-            <span>Posts</span>
+            {/* <span>H</span> */}
           </Link>
           <Link to={`/videos/${userName}`} className="item">
             <img src={Watch} alt="" />
@@ -76,9 +76,9 @@ const LeftBar = ({ userName }) => {
             <span>Workout Status</span>
           </Link>
           <hr/>
-          <Link to={`/`} className="item">
+          <Link to={`/`} className="item" style={{ marginLeft:"110px" }}>
             <img src={Logout} alt="" />
-            <span>Log out</span>
+            {/* <span>Log out</span> */}
           </Link>
         </div>
       </div>

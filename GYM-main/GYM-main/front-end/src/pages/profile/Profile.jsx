@@ -56,8 +56,9 @@ const Profile = () => {
 
   return (<div className={`theme-${darkMode ? "dark" : "light"}`}>
   <Navbar userName={userName} profilePic={userprofilePic}/>
+  <LeftBar userName={userName}/>
   <div style={{ display: "flex" }}>
-    <LeftBar userName={userName}/>
+    
     <div style={{ flex: 6 }}>
     <div className="profile">
       <div className="images">

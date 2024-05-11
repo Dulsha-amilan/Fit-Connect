@@ -32,8 +32,9 @@ function MessagePage() {
     return (
       <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <Navbar userName={userName} profilePic={profilePic} />
+        <LeftBar userName={userName} profilePic={profilePic} />
         <div style={{ display: "flex" }}>
-          <LeftBar userName={userName} profilePic={profilePic} />
+          
           <div style={{ flex: 6 }}>
             <div className="home">
               <Messages userName={userName} profile={profilePic}/>
