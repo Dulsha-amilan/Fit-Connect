@@ -19,11 +19,12 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
+        border: 4px solid #0f5680;
         object-fit: cover;
         position: absolute;
         left: 0;
-        right: 0;
-        margin: auto;
+        right: 10;
+        margin-left: 13%;
         top: 200px;
       }
     }
@@ -41,8 +42,8 @@
       .uInfo {
         height: 180px;
         -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
-        -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
-        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 0px 0px 25px -10px rgba(186, 28, 28, 0.38);
+        box-shadow: 0px 0px 25px -10px rgba(81, 148, 181, 0.38);
         border-radius: 20px;
         background-color: themed("bg");
         color: themed("textColor");
@@ -77,8 +78,8 @@
           flex: 1;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          gap: 10px;
+          // align-items: center;
+          gap: 60px;
 
           span {
             font-size: 30px;
@@ -109,6 +110,9 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+          }
+          button:hover {
+            background-color: #415bb5; /* Changes the background color when hovering over the button */
           }
         }
 

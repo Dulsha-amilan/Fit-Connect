@@ -9,6 +9,15 @@ const ShareWorkout = ({ userName, profilePic }) => {
     const [description, setDescription] = useState("");
 
     const addExercise = () => {
+        if (exercises.length > 0) {
+            // Get the last exercise in the list
+            const lastExercise = exercises[exercises.length - 1];
+            // Check if any attribute of the last exercise is empty or null
+            if (!lastExercise.exerciseName || !lastExercise.exerciseDescription) {
+                alert("Please fill in all fields for the current exercise before adding a new one.");
+                return; // Stop the function from proceeding
+            }
+        }
         setExercises(prevExercises => [
             ...prevExercises,
             {
@@ -61,9 +70,10 @@ const ShareWorkout = ({ userName, profilePic }) => {
                 }
             );
             console.log(descriptionResponse.data);
-    
+
             // If description upload is successful, proceed with exercises
             if (descriptionResponse.status === 201) {
+                
                 for (const exercise of exercises) {
                     // Create a new FormData object for each exercise
                     const exerciseFormData = new FormData();

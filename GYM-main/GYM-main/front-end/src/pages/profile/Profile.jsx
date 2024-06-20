@@ -63,7 +63,8 @@ const Profile = () => {
     <div className="profile">
       <div className="images">
         <img
-          src="https://images.pexels.com/photos/13440765/pexels-photo-13440765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          // src="https://images.pexels.com/photos/13440765/pexels-photo-13440765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
           className="cover"
         />
@@ -107,7 +108,7 @@ const Profile = () => {
             <button>follow</button>
           </div>
           <div className="right">
-            <EmailOutlinedIcon />
+            {/* <EmailOutlinedIcon /> */}
             <MoreVertIcon />
           </div>
         </div>
